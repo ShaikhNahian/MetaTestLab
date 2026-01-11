@@ -1,3 +1,7 @@
+"""
+Author: Shaikh Nahian
+Since: Dec 2025
+"""
 from core.metamorphic_relation import MetamorphicRelation
 
 class AddConstantMR(MetamorphicRelation):

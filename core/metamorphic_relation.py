@@ -1,3 +1,7 @@
+"""
+Author: Shaikh Nahian
+Since: Dec 2025
+"""
 from abc import ABC, abstractmethod
 
 class MetamorphicRelation(ABC):
