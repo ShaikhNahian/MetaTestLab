@@ -60,4 +60,25 @@ def predict_with_buggy_preprocessing(features):
     processed = np.array(processed).reshape(1, -1)
     return int(_MODEL.predict(processed)[0])
 
+def predict_proba_clean(features):
+    """
+    Returns probability of class 1 (float in [0,1]).
+    Uses correct preprocessing.
+    """
+    processed = _normalize_copy(features)
+    processed = processed.reshape(1, -1)
+    return float(_MODEL.predict_proba(processed)[0][1])
+
+
+def predict_proba_buggy(features):
+    """
+    Returns probability of class 1.
+    Uses buggy preprocessing (mutates input).
+    """
+    processed = _normalize_in_place(features)
+    processed = np.array(processed).reshape(1, -1)
+    return float(_MODEL.predict_proba(processed)[0][1])
+
+
 predict = predict_clean
+predict_buggy = predict_with_buggy_preprocessing

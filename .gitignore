@@ -1,0 +1,64 @@
+# =========================
+# MetaTestLab - .gitignore
+# =========================
+
+# --- Python bytecode / cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Pytest / test caches ---
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# --- Hypothesis (property-based fuzzing) ---
+.hypothesis/
+
+# --- Build / packaging ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Logs ---
+*.log
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- VS Code ---
+.vscode/
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# --- JetBrains IDEs (PyCharm, IntelliJ) ---
+.idea/
+
+# --- Jupyter / notebooks ---
+.ipynb_checkpoints/
+
+# --- Environment variables / secrets ---
+.env
+.env.*
+*.env
+
+# --- Generated artifacts (MetaTestLab outputs) ---
+artifacts/counterexamples/*.json
+# If you want to keep the folder but not the files, use:
+# artifacts/counterexamples/*.json
+
+# --- Misc ---
+*.tmp
+*.bak
