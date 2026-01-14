@@ -1,3 +1,7 @@
+"""
+Author: Shaikh Nahian
+Since: Dec 2025
+"""
 from hypothesis import given, settings, strategies as st
 
 from core.test_executor import MetamorphicTestExecutor

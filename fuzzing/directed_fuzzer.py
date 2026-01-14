@@ -1,3 +1,7 @@
+"""
+Author: Shaikh Nahian
+Since: Dec 2025
+"""
 import random
 from fuzzing.mutators import mutate_float_vector, clip_vector
 

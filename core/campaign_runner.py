@@ -1,3 +1,7 @@
+"""
+Author: Shaikh Nahian
+Since: Dec 2025
+"""
 from core.failure_classifier import classify_failure
 from core.test_executor import MetamorphicTestExecutor
 from core.reporting import save_counterexample

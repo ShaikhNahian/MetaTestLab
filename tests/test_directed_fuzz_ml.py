@@ -1,3 +1,7 @@
+"""
+Author: Shaikh Nahian
+Since: Dec 2025
+"""
 from fuzzing.directed_fuzzer import DirectedFuzzer
 from core.campaign_runner import run_directed_campaign
 
